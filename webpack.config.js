@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+// const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -22,29 +22,18 @@ module.exports = {
         ],
       },
 
-      // FILE LOADER - image
+      // FILE LOADER - IMAGE
       {
         test: /\.(png|jpg)$/,
         loader: 'file-loader',
         options: {
           name: 'img/[name].[ext]',
           output: 'img/',
-          // url path inside css AND html after build
           publicPath: '../',
         },
       },
 
-      // FILE LOADER - icon
-      {
-        test: /\.(svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: 'ico/[name].[ext]',
-          output: 'ico/',
-        },
-      },
-
-      // FILE LOADER - font
+      // FILE LOADER - FONT
       {
         test: /\.(woff|ttf)$/,
         loader: 'file-loader',
@@ -53,7 +42,18 @@ module.exports = {
         },
       },
 
-      // CSS LOADER + split plug
+      // FILE LOADER - ICON
+      {
+        test: /\.(svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: 'ico/[name].[ext]',
+          output: 'ico/',
+          publicPath: '../',
+        },
+      },
+
+      // CSS LOADER + SPLIT plug
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
@@ -76,6 +76,6 @@ module.exports = {
       filename: 'css/[name].css',
     }),
 
-    new CssMinimizerPlugin(),
+    // new CssMinimizerPlugin(),
   ],
 };
