@@ -1,11 +1,8 @@
-const analyze = (arr) => {
-  const avg = arr.reduce((a, b) => (a + b)) / arr.length;
-  const len = arr.length;
-  const min = Math.min(...arr);
-  const max = Math.max(...arr);
-  return {
-    avg, len, min, max,
-  };
-};
+const analyze = (arr) => ({
+  avg: arr.reduce((a, b) => (a + b)) / arr.length,
+  len: arr.length,
+  min: Math.min(...arr),
+  max: Math.max(...arr),
+});
 
 export default analyze;
