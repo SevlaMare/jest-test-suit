@@ -1,4 +1,4 @@
-import reverseString from './reverseString';
+import reverseString from '../modules/reverseString';
 
 it('Should reverse the string', () => {
   expect(reverseString('stuff')).toBe('ffuts');

@@ -1,4 +1,4 @@
-import calculator from './calculator';
+import calculator from '../modules/calculator';
 
 describe('test suit for calculator', () => {
   it('should sum all numbers', () => {

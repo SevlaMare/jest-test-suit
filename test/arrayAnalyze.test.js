@@ -1,4 +1,4 @@
-import analyze from './arrayAnalyze';
+import analyze from '../modules/arrayAnalyze';
 
 describe('test suit for analyze array', () => {
   it('should retrieve the array length', () => {
