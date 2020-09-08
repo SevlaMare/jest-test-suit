@@ -1,15 +1,8 @@
-const calculator = (() => {
-  const sum = (...args) => args.reduce((a, b) => (a + b));
+const Calculator = {
+  sum(x, y) { return x + y; },
+  sub(x, y) { return x - y; },
+  div(x, y) { return x / y; },
+  mult(x, y) { return x * y; },
+};
 
-  const sub = (...args) => args.reduce((a, b) => (a - b));
-
-  const div = (...args) => args.reduce((a, b) => (a / b));
-
-  const mult = (...args) => args.reduce((a, b) => (a * b));
-
-  return {
-    sum, sub, div, mult,
-  };
-})();
-
-export default calculator;
+export default Calculator;

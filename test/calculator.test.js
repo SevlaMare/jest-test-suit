@@ -1,19 +1,19 @@
-import calculator from '../modules/calculator';
+import Calculator from '../modules/calculator';
 
 describe('test suit for calculator', () => {
   it('should sum all numbers', () => {
-    expect(calculator.sum(1, 2, 3)).toBe(6);
+    expect(Calculator.sum(1, 2)).toBe(3);
   });
 
   it('should sum all numbers', () => {
-    expect(calculator.sub(12, 6)).toBe(6);
+    expect(Calculator.sub(12, 6)).toBe(6);
   });
 
   it('should sum all numbers', () => {
-    expect(calculator.div(12, 2)).toBe(6);
+    expect(Calculator.div(12, 2)).toBe(6);
   });
 
   it('should sum all numbers', () => {
-    expect(calculator.mult(3, 2)).toBe(6);
+    expect(Calculator.mult(3, 2)).toBe(6);
   });
 });
