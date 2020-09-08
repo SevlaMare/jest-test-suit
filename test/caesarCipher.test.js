@@ -9,11 +9,11 @@ describe('should encrypt and decrypt correctly', () => {
     expect(CesarCipher.decrypt('bca', 1)).toBe('abz');
   });
 
-  // it('should encrypt punctuation', () => {
-  //   expect(CesarCipher.encrypt('!.,?', 1)).toBe(`"/-@`);
-  // });
+  it('should encrypt correctly with punctuation', () => {
+    expect(CesarCipher.encrypt('!.,?', 1)).toBe('"/-@');
+  });
 
-  // it('should decrypt punctuation', () => {
-  //   expect(CesarCipher.decrypt('\"/-@', 1)).toBe('!.,?');
-  // });
+  it('should decrypt correctly with punctuation', () => {
+    expect(CesarCipher.decrypt('"/-@', 1)).toBe('!.,?');
+  });
 });
