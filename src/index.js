@@ -1,7 +1,7 @@
 const capitalize = (string) => {
-  let split_word = string.split('')
-  split_word[0] = split_word[0].toUpperCase()
-  return split_word.join('')
-}
+  const splitWord = string.split('');
+  splitWord[0] = splitWord[0].toUpperCase();
+  return splitWord.join('');
+};
 
 export default capitalize;

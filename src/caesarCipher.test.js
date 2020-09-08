@@ -1,7 +1,9 @@
 import CesarCipher from './caesarCipher';
 
+it('should encrypt abz to bca', () => {
+  expect(CesarCipher.encrypt('abz', 1)).toBe('bca');
+});
 
-CesarCipher().encrypt('a', 1);
-// it ('should shift a to b', () => {
-//   expect(CesarCipher.sum(1,2,3)).toBe(6)
-// })
+it('should decrypt bca to abz', () => {
+  expect(CesarCipher.decrypt('bca', 1)).toBe('abz');
+});
