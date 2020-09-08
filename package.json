@@ -4,8 +4,7 @@
   "description": "Test suit build with JEST.",
   "main": "index.js",
   "scripts": {
-    "stylelint": "npx stylelint ./src/css/*.css",
-    "eslint": "npx eslint ./src/*.js",
+    "eslint": "npx eslint ./modules/*.js",
     "test": "jest"
   },
   "repository": {

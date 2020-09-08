@@ -7,7 +7,9 @@ const calculator = (() => {
 
   const mult = (...args) => args.reduce((a, b) => (a * b));
 
-  return { sum, sub, div, mult };
+  return {
+    sum, sub, div, mult,
+  };
 })();
 
 export default calculator;
