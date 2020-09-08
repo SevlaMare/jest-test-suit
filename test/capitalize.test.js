@@ -1,5 +1,7 @@
 import capitalize from '../modules/capitalize';
 
-it('Should capitalize the first letter', () => {
-  expect(capitalize('stuff')).toBe('Stuff');
+describe('input a string, output itself capitalized', () => {
+  it('Should capitalize the first letter', () => {
+    expect(capitalize('stuff')).toBe('Stuff');
+  });
 });
