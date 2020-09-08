@@ -22,16 +22,10 @@ const CesarCipher = (() => {
     return encryptedLetter;
   };
 
-  const encryptLetter = (string, index, numToShift) => 
-    toLetter(encryptLetterNumber(toNum(string, index), numToShift));
-
-  const decryptLetter = (string, index, numToUnShift) => 
-    toLetter(decryptLetterNumber(toNum(string, index), numToUnShift));
-
   const encrypt = (string, numToShift) => {
     let encryptWord = '';
     for (let index = 0; index < string.length; index += 1) {
-      encryptWord += encryptLetter(string, index, numToShift);
+      encryptWord += toLetter(encryptLetterNumber(toNum(string, index), numToShift));
     }
     return encryptWord;
   };
@@ -39,7 +33,7 @@ const CesarCipher = (() => {
   const decrypt = (string, numToUnShift) => {
     let decryptWord = '';
     for (let index = 0; index < string.length; index += 1) {
-      decryptWord += decryptLetter(string, index, numToUnShift);
+      decryptWord += toLetter(decryptLetterNumber(toNum(string, index), numToUnShift));
     }
     return decryptWord;
   };
