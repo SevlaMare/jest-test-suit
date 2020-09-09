@@ -17,19 +17,11 @@ describe('should encrypt and decrypt correctly', () => {
     expect(CesarCipher.cipher('BCA', -1)).toBe('ABZ');
   });
 
-  it('should encrypt correctly with punctuation', () => {
-    expect(CesarCipher.cipher('!.,?', 1)).toBe('"/-@');
-  });
-
-  it('should decrypt correctly with punctuation', () => {
-    expect(CesarCipher.cipher('"/-@', -1)).toBe('!.,?');
-  });
-
   it('should encrypt correctly with spaces', () => {
     expect(CesarCipher.cipher('attack at dawn', 5)).toBe('fyyfhp fy ifbs');
   });
 
   it('should encrypt correctly with spaces and uppercase', () => {
-    expect(CesarCipher.cipher('ATTACK AT DAWN', 5)).toBe('FYYFHP FY IFBS');
+    expect(CesarCipher.cipher('ATTACK.AT.DAWN', 5)).toBe('FYYFHP.FY.IFBS');
   });
 });
