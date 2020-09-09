@@ -1,13 +1,8 @@
-# TELL ME WEATHER
-> You want a quickly way to check the weather? This app do it!
-
-![screenshot](doc/screenshot.png)
-
-<br>This is a mobile app, built to practice asynchronous calls, on an api integration.<br>
+# JEST TEST SUIT
+> A few basic functions to practice unit tests using JEST workflow
 
 ## Content
 
-* [Live Demo](#live-demo)
 * [Requirements](#requirements)
 * [Built With](#built-with)
 * [Getting Start](#getting-start)
@@ -16,27 +11,18 @@
 * [Author](#author)
 * [License](#license)
 
-## Live Demo
-You can access a deployed version of this app:<br>
-https://weather-app-007.web.app/
-
-## Requirements
-- [x] Integration with a external API
-- [x] Setup webpack to build all from source(src) to distribuition(dist) folder
-- [x] Setup npm/yarn scripts to linters, server and webpack build
 
 
 ## Pre-requisites
 <ul>
-	<li>Node</li>
-	<li>Yarn</li>
-	<li>Web browser</li>
+  <li>Node</li>
+  <li>Yarn</li>
 </ul>
 
 ## Built With
 
 - Javascript<br>
-- HTML/CSS <br>
+- JEST<br>
 - Webpack <br>
 - ESlint and Stylelint (Linters) <br>
 - GitHub Actions (CI Tool) <br>
@@ -48,7 +34,7 @@ https://weather-app-007.web.app/
 #### Get a local copy
 Now you need a copy of this application, if you are using Git:
 ```js
-git clone git@github.com:SevlaMare/tell-me-weather.git
+git clone git@github.com:SevlaMare/jest-test-suit.git
 ```
 Otherwise just hit (Download Zip) on green button (Clone or Download) at top of this page.
 
@@ -58,14 +44,9 @@ Otherwise just hit (Download Zip) on green button (Clone or Download) at top of 
 npm install
 ```
 
-#### Start the server with
+#### Run tests
 ```js
-yarn go
-```
-
-#### Visit the app running on
-```js
-localhost:7000
+yarn test
 ```
 
 ### Contributing
@@ -78,7 +59,13 @@ You can do it on [issues page](issues/).
 
 A special thanks for the code reviewers.
 
-## Author
+## Authors
+
+👤 **Oscar Elizarrarás**
+
+- Github: [@Oscar](https://github.com/AlfredoElizarraras)
+- Twitter: [#Oscar](https://twitter.com/OscarAlfredoGm4)
+- Linkedin: [Oscar](https://mx.linkedin.com/in/oscar-alfredo-gomez-elizarraras)
 
 👤 **Thiago Miranda**
 
